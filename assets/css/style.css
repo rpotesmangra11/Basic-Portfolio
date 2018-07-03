@@ -25,12 +25,23 @@ header {
   overflow: hidden;
 }
 
+#centerHeader {
+  width: 960px;
+  margin: 0px auto;
+}
+
+#aboutMe {
+  color: #4aaaa5;
+  text-align: left;
+  margin: 25px 0;
+}
+
 #name {
   background-color: #4aaaa5;
   color: white;
   width: 300px;
   float: left;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   height: 120px;
   padding-top: 40px;
 }
@@ -38,7 +49,6 @@ header {
 nav {
   float: right;
   margin-top: 40px;
-  margin-right: 20px;
 }
 
 nav ul {
@@ -69,13 +79,15 @@ section {
   border: 2px solid #dddddd;
   clear: both;
   margin: 50px auto 100px auto;
-  padding: 10px 80px;
-  width: 700px;
+  padding: 10px 20px;
+  width: 920px;
   flex: 1;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #profileImage {
   float: left;
+  padding-right: 10px;
 }
 
 #foot {
@@ -143,4 +155,9 @@ img.resize {
 
 #portPics {
   padding: 20px 20px;
+}
+
+.aboutMeP {
+  margin: 30px 10px;
+  line-height: 25px;
 }
