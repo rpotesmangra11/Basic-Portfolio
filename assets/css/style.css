@@ -2,7 +2,7 @@ html,
 body,
 h2 {
   margin: 0px;
-  padding: 0;
+  padding: 0px;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   width: 100%;
   text-align: center;
   color: #777777;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Playfair Display', serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -20,7 +20,7 @@ header {
   border-bottom: 5px solid #cccccc;
   background-color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
-  max-height: 100px;
+  max-height: 120px;
   padding-bottom: 5x;
   overflow: hidden;
 }
@@ -37,13 +37,14 @@ header {
 }
 
 #name {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
   background-color: #4aaaa5;
   color: white;
   width: 300px;
   float: left;
-  /* margin-left: 80px; */
-  height: 120px;
-  padding-top: 40px;
+  padding: 30px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 nav {
@@ -148,16 +149,40 @@ input[type=submit]:hover {
 }
 
 img.resize {
-  max-width: 40%;
-  max-height: 40%;
-  padding: 10px 20px;
+  width: 400px;
+  height: 237px;
 }
 
-#portPics {
+/* #portPics {
   padding: 20px 20px;
-}
+  float: left;
+} */
 
 .aboutMeP {
   margin: 30px 10px;
   line-height: 25px;
+}
+
+.portContainer {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+}
+
+.portLabel {
+  position: absolute;
+  bottom: 20px;
+  background-color: #4aaaa5;
+  width: 100%;
+  height: 45px;
+  color: white;
+  padding-top: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
